@@ -1,12 +1,13 @@
 def main():
-    first_name = input("اسم را وارد کنید: ").strip()
-    last_name = input("فامیل را وارد کنید: ").strip()
+    first_name = input("نام: ")
+    last_name = input("نام خانوادگی: ")
+    national_code = input("کد ملی: ")
 
-    if not first_name or not last_name:
-        print("لطفاً اسم و فامیل را کامل وارد کنید.")
+    if not first_name or not last_name or not national_code:
+        print("لطفاً همه ورودی‌ها (نام، نام خانوادگی، کد ملی) را وارد کنید.")
         return
 
-    print(f"به کانال ما خوش آمدید، {first_name} {last_name}. چطور میتونم کمکتون کنم؟")
+    print(f"خوش آمدید {first_name} {last_name} (کد ملی: {national_code})")
 
 
 if __name__ == "__main__":
